@@ -1,0 +1,64 @@
+.div-start {
+    background-color: nth($colores, 3);
+    margin: auto;
+    color: nth($colores, 5);
+    font-size: nth($fontsize, 3);
+    font-family: 'Bitter', serif;
+    text-align: center;
+    @include display-flex;
+
+    .img-one {
+        width: 85px;
+        height: auto;
+    }
+}
+
+.div-title {
+    @include caracteristicas-titulo;
+}
+
+.card-contenedor{
+    color: nth($colores, 5);
+    font-size: nth($fontsize, 3);
+    font-family: 'Bitter', serif;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+  @media screen and (max-widith: 450px) {
+    display: flex;
+    flex-wrap: wrap;;
+   
+ 
+    
+  }
+    
+}
+
+.carousel-section {
+    .carousel-dimension {
+        @include dimension;
+    }
+}
+
+.div-fn {
+    background-color: nth($colores, 1);
+    opacity: 0.4;
+    margin: auto;
+    color: nth($colores, 6);
+    font-size: nth($fontsize, 3);
+    font-family: 'Bitter', serif;
+    text-align: center;
+    @include display-flex;
+
+    .img-one {
+        width: 85px;
+        height: auto;
+    }
+
+    .title-fn {
+        @include transformacion;
+    }
+}

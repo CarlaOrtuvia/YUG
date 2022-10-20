@@ -1,0 +1,40 @@
+@mixin display-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin caracteristicas-titulo {
+    color: nth($colores, 6);
+    font-style: italic;
+    font-weight: bold;
+    font-size: nth($fontsize, 5);
+    font-family: 'Bitter', serif;
+    text-align: center;
+    margin: 45px;
+}
+@mixin flexible {
+    display: flex;
+    justify-content: center;
+}
+@mixin dimension {
+    width: 20%;
+    height: 20%;
+    margin: 0 auto;
+}
+@mixin transformacion {
+    &:hover {
+        transform: scale(2);
+        color: nth($colores, 6);
+    }
+
+    transition-property: all;
+    transition-duration: 3s;
+}
+@mixin estilo-imagenes{
+    width: 100%;
+    height: auto;
+   margin-left: 75px;
+    box-shadow: 10px 10px 19px 2px rgba(136, 121, 176, 0.75);
+    -webkit-box-shadow: 10px 10px 19px 2px rgba(136, 121, 176, 0.75);
+    -moz-box-shadow: 10px 10px 19px 2px rgba(136, 121, 176, 0.75);
+}
